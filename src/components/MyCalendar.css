@@ -1,0 +1,58 @@
+/* MyCalendar.css */
+
+.DemoContainer {
+    max-width: 300px; /* Adjust the width as needed */
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .DateCalendar {
+    width: 100%;
+  }
+  
+  /* Style the date picker */
+  .DayPicker {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  
+  .DayPicker-Month {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .DayPicker-Weekday {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .DayPicker-Day {
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .DayPicker-Day--today {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .DayPicker-Day--selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .DayPicker-Day--disabled {
+    color: #ccc;
+    pointer-events: none;
+  }
+  
+  
