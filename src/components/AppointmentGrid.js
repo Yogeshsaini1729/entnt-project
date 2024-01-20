@@ -54,21 +54,21 @@ const AppointmentGrid = ({ setShowCalendar, selectedDate }) => {
 
   return (
     <div >
-      <div style={{backgroundColor:'black'}}  className="header">
+      <div style={{backgroundColor:'#b16868'}}  className="header">
         <h1>Momentum Fitness Collective</h1>
-        <button style={{backgroundColor:'yellow', color:'black'}} className="button" onClick={myFunc}>Add Appointment</button>
+        <button style={{backgroundColor:'#dbb393', color:'black'}} className="button" onClick={myFunc}>Add Appointment</button>
       </div>
       {showForm && <AppointmentForm isAdd={isAdd} setIsAdd={setIsAdd} onAddAppointment={handleAddAppointment} />}
       <TableContainer component={Paper} className="table">
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell style={{backgroundColor:'black'}} >First Name</TableCell>
-              <TableCell style={{backgroundColor:'black'}} >Last Name</TableCell>
-              <TableCell style={{backgroundColor:'black'}} >Location</TableCell>
-              <TableCell style={{backgroundColor:'black'}} >Appointments</TableCell>
-              <TableCell style={{backgroundColor:'black'}} >Edit</TableCell>
-              <TableCell style={{backgroundColor:'black'}} >Delete</TableCell>
+              <TableCell style={{backgroundColor:'#726e65'}} >First Name</TableCell>
+              <TableCell style={{backgroundColor:'#726e65'}} >Last Name</TableCell>
+              <TableCell style={{backgroundColor:'#726e65'}} >Location</TableCell>
+              <TableCell style={{backgroundColor:'#726e65'}} >Appointments</TableCell>
+              <TableCell style={{backgroundColor:'#726e65'}} >Edit</TableCell>
+              <TableCell style={{backgroundColor:'#726e65'}} >Delete</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

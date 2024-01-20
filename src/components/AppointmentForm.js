@@ -46,7 +46,7 @@ const AppointmentForm = ({ onAddAppointmentm, isAdd, setIsAdd }) => {
 
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DemoContainer components={['DateTimePicker']}>
-        <Grid container spacing={3} className="form">
+        <Grid container spacing={3} className="form" style={{backgroundColor:'#b9adb1'}}>
           <Grid item xs={12}>
             <h2>Add Appointment</h2>
           </Grid>
@@ -84,8 +84,8 @@ const AppointmentForm = ({ onAddAppointmentm, isAdd, setIsAdd }) => {
             <DateTimePicker style={{backgroundColor:'black'}}  onChange={(value) => { setFormData({ ...formData, date: value }) }} name="date" label="Basic date time picker" />
           </Grid>
           <Grid item xs={12}>
-            <Button style={{backgroundColor:'black'}} sx={{ mr: 2 }} variant="contained" onClick={handleAddAppointment}>Add Appointment</Button>
-            <Button style={{backgroundColor:'black'}}  sx={{ mx: 2 }} variant="contained" color="primary" onClick={handleSave}>Save</Button>
+            <Button style={{backgroundColor:'#726e65'}} sx={{ mr: 2 }} variant="contained" onClick={handleAddAppointment}>Add Appointment</Button>
+            <Button style={{backgroundColor:'#726e65'}}  sx={{ mx: 2 }} variant="contained" color="primary" onClick={handleSave}>Save</Button>
           </Grid>
         </Grid>
 
