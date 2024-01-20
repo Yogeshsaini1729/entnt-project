@@ -68,4 +68,4 @@ The `App` component serves as the main entry point for the application. It orche
 - Appointment data is persisted using local storage.
 - Ensure all dependencies are installed before running the application.
 
-Feel free to explore the code, and thank you for checking out the Momentum Fitness Collective project! If you have any questions or encounter issues, please don't hesitate to reach out to the project contributors.
+Feel free to explore the code, and thank you for checking out the Momentum Fitness Collective project! If you have any questions or encounter issues, please don't hesitate to reach out .
