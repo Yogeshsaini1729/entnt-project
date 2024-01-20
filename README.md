@@ -1,71 +1,71 @@
-# Getting Started with Create React App
+# Project Documentation: Momentum Fitness Collective
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Welcome to the Momentum Fitness Collective project! This application is designed to manage appointments for a fitness collective. It includes features such as adding, editing, and deleting appointments. The user interface is built using React and the Material-UI library, and date picking functionality is implemented with the MUI X Date Picker.
 
-In the project directory, you can run:
+## Project Structure
 
-### `npm start`
+The project is organized into several components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. **AppointmentForm**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **File Path:** `src/components/AppointmentForm.js`
 
-### `npm test`
+This component handles the form for adding appointments. It utilizes Material-UI components and the MUI X Date Picker for date and time selection.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. **AppointmentGrid**
 
-### `npm run build`
+- **File Path:** `src/components/AppointmentGrid.js`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The `AppointmentGrid` component displays a table of appointments, provides options for adding, editing, and deleting appointments. It interacts with the `AppointmentForm` component and uses local storage to persist appointment data.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. **CalendarPage**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **File Path:** `src/components/CalendarPage.js`
 
-### `npm run eject`
+The `CalendarPage` component presents a date picker, implemented with MUI X Date Picker. It allows users to select a date, and the selected date is used to filter appointments displayed in the `AppointmentGrid` component.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. **MyCalendar.css**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **File Path:** `src/components/MyCalendar.css`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This CSS file styles the date picker presented in the `CalendarPage` component.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 5. **Notification**
 
-## Learn More
+- **File Path:** `src/components/Notification.js`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The `Notification` component is a simple notification using Material-UI's Snackbar component, providing feedback for successful operations.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 6. **editModal**
 
-### Code Splitting
+- **File Path:** `src/components/editModal.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The `editModal` component is a modal that enables users to edit appointment details. It utilizes Material-UI components and the MUI X Date Picker for date and time selection.
 
-### Analyzing the Bundle Size
+### 7. **App**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **File Path:** `src/App.js`
 
-### Making a Progressive Web App
+The `App` component serves as the main entry point for the application. It orchestrates the layout using React and Material-UI's Box and Grid components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## How to Run the Project
 
-### Advanced Configuration
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate to the project directory: `cd <project-directory>`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Usage
 
-### Deployment
+- Use the date picker in the `CalendarPage` component to select a date.
+- Add appointments using the "Add Appointment" button in the `AppointmentGrid` component.
+- View, edit, and delete appointments in the table displayed in the `AppointmentGrid` component.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Notes
 
-### `npm run build` fails to minify
+- Appointment data is persisted using local storage.
+- Ensure all dependencies are installed before running the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-vvjgjhgjgj
+Feel free to explore the code, and thank you for checking out the Momentum Fitness Collective project! If you have any questions or encounter issues, please don't hesitate to reach out to the project contributors.
