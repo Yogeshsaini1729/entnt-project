@@ -2,7 +2,13 @@
 
 ## Overview
 
+# Project Documentation: Momentum Fitness Collective
+
 Welcome to the Momentum Fitness Collective project! This application is designed to manage appointments for a fitness collective. It includes features such as adding, editing, and deleting appointments. The user interface is built using React and the Material-UI library, and date picking functionality is implemented with the MUI X Date Picker.
+
+## Live Demo
+
+Explore the live demo of the Momentum Fitness Collective project [here](https://entnt-assignment-amber.vercel.app/).
 
 ## Project Structure
 
